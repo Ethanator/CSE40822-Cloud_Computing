@@ -6,7 +6,7 @@ import datetime
 times = []
 for i in xrange(5):
     start = datetime.datetime.now()
-    for j in xrange(100):
+    for j in xrange(10):
         os.system('povray +Irubiks.pov +Oframe' + str(i) + '-' + '%03d' % (j) + '.png +W320 +H400 +K' + str(float(j) / 10)) 
     os.system('ffmpeg -r 10 -i frame' + str(i) + '-%03d.png -r ntsc movie-' + str(i) + '.mpg')
     times.append((datetime.datetime.now() - start).total_seconds())
