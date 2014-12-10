@@ -7,7 +7,7 @@ wget http://downloads.sourceforge.net/project/povray.mirror/povlinux-3.6.1.tar.b
 tar jxf povlinux-3.6.1.tar.bz2
 rm povlinux-3.6.1.tar.bz2
 sudo povray-3.6/install -no-arch-check
-echo "export PATH=\"$HOME/povray-3.6:$PATH\"" >> ~/.bashrc
+echo "export PATH=\"$HOME/CSE40822-Cloud_Computing/povray-3.6:$PATH\"" >> ~/.bashrc
 echo `source ~/.bashrc`
 wget http://www3.nd.edu/~dthain/courses/cse40822/fall2014/a1/WRC_RubiksCube.inc
 mkdir test1
