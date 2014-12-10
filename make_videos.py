@@ -12,6 +12,9 @@ for i in xrange(5):
     times.append((datetime.datetime.now() - start).total_seconds())
     os.system('rm frame' + str(i) + '*')
 print '==='
+f = open('time.txt', 'w')
 for t in times:
     print t
+    f.write(str(t) + '\n')
+f.close()
     
